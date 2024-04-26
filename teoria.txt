@@ -1,0 +1,186 @@
+
+
+Si tengo un repositorio = carpeta
+
+Alcance Local:
+
+Todo lo que está dentro de la carpeta, tiene un alcance
+global
+
+Para un repositorio mi correo puede ser X o Y
+
+
+Alcance Global:
+
+Es para todos los repositorios dentro de mi usuario
+
+
+
+System: 
+
+Para toda la computadora
+
+
+A lo más específico siempre se le da prioridad
+
+>>>>>>>>>>>>>>>>>>>>>>Acceder a configuraciones<<<<<<<<<<<<<<<
+
+* Para acceder a las configuraciones:
+
+git config 
+
+* Para acceder a las configuraciones globales
+
+git config --global
+
+* Para acceder a las configuraciones locales 
+
+git config --local 
+
+* Para acceder a las configuraciones de System
+
+git config --system  
+
+
+
+>>>>>>>>>>>Para cambiar mi username<<<<<<<<<<<<<
+
+
+git config --global user.name = "Mi nombre"
+
+
+>>>>>>>>>>Para cambiar mi correo<<<<<<<<<<<<<<<<<<
+
+git config --global user.email = "jyfhmr@gmail.com"
+
+
+>>>>>>>>>>Lista de configuraciones globales<<<<<<<<<<<<<
+
+git config --global --list
+
+
+
+>>>>>>>Configura visual studio code como editor de texto<<<<<<<<<<
+//y espera a que se cierre el editor de texto para guardar
+//los cambios (code es palabra reservada)
+
+git config --global code.editor "code --wait"
+
+
+
+
+>>>>>>>>Sólamente en windows<<<<<<<<<<<<<<<<
+
+Cuando se suba un archivo desde Windows, y se descargue 
+desde linux, no habrá incompatibilidad, pues en los saltos
+de linea 
+
+Windows agrega un \n\r , para los saltos de línea
+Linux no hace esto, así que se pueden generar incompatibilidades
+Para evitar esto se hace
+
+
+git config --global core.autocrlf true
+
+
+
+* ¿Qué es un repositorio?
+
+Un espacio donde podemos guardar archivos, imágenes, videos
+etc, que nos permite tener un control de las diferentes
+versiones del mismo si es algo que se va a cambiar 
+continuamente
+
+
+*                       3 áreas
+
+Repositorio: es una especie de lugar que va a 
+manejar las versiones y donde está el proyecto terminado
+
+Directorio de trabajo: son todos los documentos que bajas
+
+Stage Area: el área intermedia, antes de subir los cambios 
+al repositorio
+
+
+Carpeta = Directorio 
+
+
+*Crear directorios mkdir nombreCarpeta
+*Eliminar directorio rmdir nombreCarpeta
+
+
+>>>>>>>>Empieza un repositorio en una carpeta<<<<<<<<<
+
+git init 
+
+
+
+>>>>>>>>Que archivos hay?<<<<<<<<<<<<<<<<<<
+
+ls 
+
+
+>>>>>>>>>Visualizar archivos ocultos<<<<<<<<
+
+ls -a  
+
+
+>>>>>>>>>Añadir un archivo a nuestro Stage 
+Para después al repositorio <<<<<<<<<<<<<<<
+
+git add archivo.txt 
+
+
+>>>>>>>Remover un archivo del stage<<<<<<<<
+
+git remove archivo.txt 
+
+
+>>>>Saber que archivos se subirán cuando hagas un 
+commit o qué archivos hay en el área de preparación<<<<<<
+
+git status
+
+
+>>>>>Subir archivos al repositorio que estén en stage<<<<
+
+git commit -m "Mensaje del commmit"
+
+
+>>>>>>>Se salta la zona de Stage<<<<<<<<<<<<<<<<
+Y subes los archivos
+
+
+git commit -a  
+
+
+>>>>>Si haces commit de un archivo eliminado<<<<<<
+
+Se hará con el commit, pues sube los cambios 
+
+
+
+
+>>>>Recuperar un archivo del área de preparación<<<<
+
+git restore archivo.txt 
+
+
+>>>>>>>Haces un rollback al último commit<<<<<<
+
+git checkout archivo.txt
+
+
+
+>>>>>Vuelves a la última versión del commit y 
+saca los archivos del Stage<<<<<<<<<<
+
+git reset --hard
+
+
+
+>>>>>Cambia el nombre a un archivo<<<<<<
+
+
+git mv archivo.txt archivo2.txt
