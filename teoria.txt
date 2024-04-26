@@ -184,3 +184,6 @@ git reset --hard
 
 
 git mv archivo.txt archivo2.txt
+
+Lo verde está preparado para subirse 
+Lo rojo no lo está
