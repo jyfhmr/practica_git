@@ -229,3 +229,52 @@ git log --oneline
  manda al stage
 
  git reset --soft hashDelCommitAlQueQuieroVolver
+
+  git reset --hard hashDelCommitAlQueQuieroVolver
+
+  Vuelvo al commit que indiqué, me borra todo y además en el workspace tendré dicho commit 
+
+  Un branch: es un puntero que apunta a una copia del 
+  proyecto, es una linea de tiempo independiente
+
+  Como no afectas a la rama principal, después si los cambios tuvieron éxito se pueden integrar en la rama principal 
+
+
+
+  >>>>>>>Crear una rama<<<<<<<<<<
+
+  git branch uso-kevav-case 
+
+
+  >>>>>Muevete a una rama<<<<<<<<<
+
+  git checkout nueva_rama
+  git switch nueva_rama  
+
+
+  >>>>>>>¿En qué rama ando?<<<<<<<<<
+
+  git branch  
+
+
+ Las ramas las creas a partir de la rama en la que estás 
+
+
+ 
+>>>>>Quiero borrar una rama<<<<<<<<<
+
+git branch -d nombre_rama 
+
+TIENES QUE SALIR DE LA RAMA ANTES DE BORRARLA 
+
+
+>>>>>Quiero modificar una rama (cambiar name)<<<<<<<<<
+
+git branch -m rama_que_quiero_modificar rama_modificado
+
+ESTO ES SI NO ESTÁS EN ESA RAMA 
+
+
+Los cambios que tengas en una rama, son de esa rama 
+
+
