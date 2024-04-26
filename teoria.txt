@@ -278,3 +278,11 @@ ESTO ES SI NO ESTÁS EN ESA RAMA
 Los cambios que tengas en una rama, son de esa rama 
 
 
+
+>>>>>>>>>>>MERGE<<<<<<<<<<<<<<<<
+
+
+Estoy en una rama que consiguió resolver un error
+y quiero mover esos cambios a la master
+
+git switch
