@@ -185,5 +185,17 @@ git reset --hard
 
 git mv archivo.txt archivo2.txt
 
+--
 Lo verde está preparado para subirse 
 Lo rojo no lo está
+
+
+>>>>>>>>>Puedes sacar el log del commit, que es un 
+identificador y comparar ambos commit<<<<<<<<<<<<<
+
+git diff log1 log2
+
+
+>>>>>Ver los commit hechos y sus ids<<<<<<<<<<<<<<
+
+git log --oneline
