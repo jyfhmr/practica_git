@@ -196,6 +196,36 @@ identificador y comparar ambos commit<<<<<<<<<<<<<
 git diff log1 log2
 
 
+>>>>>>Abreviar a 5 el hash que identifica el commit<<<<
+
+git config --global core.abbrev 5
+
+
 >>>>>Ver los commit hechos y sus ids<<<<<<<<<<<<<<
 
 git log --oneline
+
+
+>>>>>>>Ver los cambios en código que se hicieron<<<<<
+
+ git diff --word-diff 7451a a784a
+
+ HEAD APUNTA HACIA DONDE ESTAMOS AHORA <SALE CUADNO HACEMOS EL git log>
+
+
+>>>>>Reemplaza el último commit<<<<<<<<<<<
+
+ git commit --amend  
+
+
+
+ Una rama es como una línea de tiempo
+
+
+ >>>>>>Borrar un commit<<<<<<<<<
+
+ Podemos hacerlo volviendo el HEAD el commit anterior
+ de maner que el último se borra del repositorio y se 
+ manda al stage
+
+ git reset --soft hashDelCommitAlQueQuieroVolver
