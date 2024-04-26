@@ -285,4 +285,45 @@ Los cambios que tengas en una rama, son de esa rama
 Estoy en una rama que consiguió resolver un error
 y quiero mover esos cambios a la master
 
-git switch
+TE UBICAS EN MASTER
+
+git merge nombre_de_la_rama_que_quiero_conectar 
+
+
+>>>Quieres borrar un menrge?<<<<<<<
+
+git reset --hard codigo_del_que_quiero
+
+
+Las ramas muestran sus commit y de sus ramas PADRES
+
+
+
+>>>>>>>>Resolver conflictos al hacer merge<<<<<<<<
+
+
+Cuando editas el master con un commit y la parte que editaste
+
+también se editó en la nueva branch
+
+entonces al hacer el commit, ¿cuál cambio se guardará?
+eso es un merge conflict 
+
+
+>>>>>>>>>>>>.gitignore<<<<<<<<<<<<
+
+
+
+>>>>>>>>>>>>reflog<<<<<<<<<<<<<<<<<<
+
+Lleva un registro del HEAD que indica en donde estás parado 
+
+
+>>>>>>Añade un origen al cual subir el repo<<<<<
+
+git remote add origin https://github.com/jyfhmr/practica_git.git
+
+
+>>>>>>>Sube los cambios al origen añadido<<<<<<<
+
+git push -u origin BRANCH_QUE_QUIERO_PUSHEAR

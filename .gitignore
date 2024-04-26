@@ -1,0 +1,5 @@
+archivo_que_qUiero_ignorar.txt
+
+!archivo_que_no_quiero_ignorar.txt
+
+node_modules/
